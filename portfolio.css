@@ -158,10 +158,10 @@ dd {
 }
 
 h1 {
-  max-width: 14ch;
-  font-size: clamp(2.2rem, 4.8vw, 3.8rem);
-  line-height: 1.08;
-  letter-spacing: -0.03em;
+  max-width: none;
+  font-size: clamp(2rem, 3.6vw, 3rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
 }
 
 h2 {
@@ -178,6 +178,7 @@ h3 {
 
 .hero-text,
 .hero-subtext,
+.hero-role,
 .section-note,
 .project-time,
 .project-details dd,
@@ -195,6 +196,13 @@ h3 {
 .hero-subtext {
   max-width: 62ch;
   font-size: 1.02rem;
+}
+
+.hero-role {
+  margin-top: -6px;
+  color: var(--accent);
+  font-size: 1.05rem;
+  font-weight: 700;
 }
 
 .hero-subtext {
