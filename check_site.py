@@ -29,12 +29,12 @@ else:
         if html.count(f"<dt>{label}</dt>") < 2:
             errors.append(f"Expected project label twice: {label}")
 
-    if 'href="styles.css"' not in html:
+    if 'href="portfolio.css?v=20260414b"' not in html:
         errors.append("Missing stylesheet link")
 
-    css = Path(__file__).with_name("styles.css")
+    css = Path(__file__).with_name("portfolio.css")
     if not css.exists():
-        errors.append("Missing styles.css")
+        errors.append("Missing portfolio.css")
     else:
         css_text = css.read_text(encoding="utf-8")
         if "@media (max-width: 720px)" not in css_text:
