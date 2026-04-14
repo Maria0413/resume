@@ -23,7 +23,7 @@ else:
         "Data",
         "Approach",
         "Outcome / Impact",
-        "Your Contribution",
+        "My Contribution",
     ]
     for label in project_labels:
         if html.count(f"<dt>{label}</dt>") < 2:
