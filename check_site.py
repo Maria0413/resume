@@ -29,7 +29,7 @@ else:
         if html.count(f"<dt>{label}</dt>") < 2:
             errors.append(f"Expected project label twice: {label}")
 
-    if 'href="portfolio.css?v=20260414d"' not in html:
+    if 'href="portfolio.css?v=20260414e"' not in html:
         errors.append("Missing stylesheet link")
 
     css = Path(__file__).with_name("portfolio.css")
